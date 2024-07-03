@@ -1,0 +1,104 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-right: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.task-item .content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.task-item input[type="checkbox"] {
+    margin: 0 10px 0 0; /* Adjusted margin for checkbox */
+    width: 10px; /* Fixed width for checkbox */
+    height: 10px; /* Fixed height for checkbox */
+    background: red;
+}
+
+.task-item span {
+    font-size: 20px;
+    width: 200px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  
+}
+.cancel-button {
+    color: rgb(255, 0, 170) !important;
+    background-color: white !important; 
+    font-weight: bold;
+}
+
+.MuiDialog-paper {
+    width: 400px;
+    border-radius: 15px !important;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    background: url('../image/bgimage2.jpeg');
+    background-size:cover ;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(to bottom, rgb(240, 0, 160), black) !important; */
+    color: #fff;
+}
+.MuiDialogTitle-root {
+    
+    padding: 16px; 
+    font-weight: bold; 
+    color: white;
+}
+.custom-text-field .MuiInputBase-root {
+    /* background-color:rgb(209, 34, 34); */
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid white;
+}
+
+.save-button {
+    color: white !important;
+    background-color: green !important; 
+}
+.Dialog-main{
+    background: pink !important;
+}
+
+.task-item button {
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+
+@media (max-width: 500px) {
+    .task-item {
+        display: flex; 
+        align-items: center;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .task-item .content {
+        display: flex; 
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .task-item span {
+        font-size: 1rem;
+        text-align: left;
+        flex-grow: 1;
+     }
+
+    .task-item button {
+        padding: 12px;
+        font-size: 1rem;
+        width: 90px;
+        display: flex;
+        margin-left: auto; 
+    }
+
+    .task-item input[type="checkbox"] {
+    }
+}
